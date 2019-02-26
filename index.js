@@ -6,8 +6,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const networkInterfaces = os.networkInterfaces( );
-const networkAdapter = 'wlp5s0'
-const localIp =  networkInterfaces[networkAdapter][0].address
+const herokuDomain = 'secret-eyrie-21914.herokuapp.com'
 const port = process.env.PORT || 80
 
 
@@ -15,18 +14,18 @@ const port = process.env.PORT || 80
 
 
 const signos = {
-    acuario: `http://${localIp}:${port}/img/acuario.png`,
-    aries: `http://${localIp}:${port}/img/aries.png`,
-    cancer: `http://${localIp}:${port}/img/cancer.png`,
-    capricornio: `http://${localIp}:${port}/img/capricornio.png`,
-    escorpio: `http://${localIp}:${port}/img/escorpio.png`,
-    geminis: `http://${localIp}:${port}/img/geminis.png`,
-    leo: `http://${localIp}:${port}/img/leo.png`,
-    libra: `http://${localIp}:${port}/img/libra.png`,
-    piscis: `http://${localIp}:${port}/img/piscis.png`,
-    sagitario: `http://${localIp}:${port}/img/sagitario.png`,
-    tauro: `http://${localIp}:${port}/img/tauro.png`,
-    virgo: `http://${localIp}:${port}/img/virgo.png`
+    acuario: `http://${herokuDomain}/img/acuario.png`,
+    aries: `http://${herokuDomain}/img/aries.png`,
+    cancer: `http://${herokuDomain}/img/cancer.png`,
+    capricornio: `http://${herokuDomain}/img/capricornio.png`,
+    escorpio: `http://${herokuDomain}/img/escorpio.png`,
+    geminis: `http://${herokuDomain}/img/geminis.png`,
+    leo: `http://${herokuDomain}/img/leo.png`,
+    libra: `http://${herokuDomain}/img/libra.png`,
+    piscis: `http://${herokuDomain}/img/piscis.png`,
+    sagitario: `http://${herokuDomain}/img/sagitario.png`,
+    tauro: `http://${herokuDomain}/img/tauro.png`,
+    virgo: `http://${herokuDomain}/img/virgo.png`
 
 
 }
